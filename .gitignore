@@ -1,0 +1,31 @@
+# WakeGuard 只保留 C/Win32 版本，其余语言实现不入库
+
+# ---- 其它语言版本（历史实现，仅作本地备份）----
+wakeguard.py
+src/Program.cs
+src/WakeGuard.csproj
+bin/WakeGuard.exe
+
+# ---- C# 构建产物 ----
+src/bin/
+src/obj/
+*.dll
+*.pdb
+*.ilk
+
+# ---- 临时更新包 / 中间产物 ----
+bin/WakeGuardC_v11.exe
+*.o
+*.obj
+*.ilk
+
+# ---- 调试与临时文件 ----
+_*.txt
+*.log
+*.tmp
+
+# ---- WorkBuddy 工作区数据（非项目源码）----
+.workbuddy/
+
+# ---- 例外：C 版成品可执行文件需要入库 ----
+!bin/WakeGuardC.exe
